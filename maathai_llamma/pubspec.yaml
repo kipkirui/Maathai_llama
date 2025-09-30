@@ -1,7 +1,15 @@
 name: maathai_llamma
 description: "Flutter plugin wrapping llama.cpp for offline chat inference."
-version: 0.0.1
-homepage:
+version: 0.1.0
+homepage: https://github.com/usemaathai/maathai_llamma
+repository: https://github.com/usemaathai/maathai_llamma
+issue_tracker: https://github.com/usemaathai/maathai_llamma/issues
+documentation: https://github.com/usemaathai/maathai_llamma#readme
+topics:
+  - ai
+  - llm
+  - offline
+  - native
 
 environment:
   sdk: ^3.9.2
@@ -35,9 +43,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.maathai_llamma
-        pluginClass: MaathaiLlammaPlugin
-      ios:
+        package: com.usemaathai.maathai_llamma
         pluginClass: MaathaiLlammaPlugin
 
   # To add assets to your plugin package, add an assets section, like this:

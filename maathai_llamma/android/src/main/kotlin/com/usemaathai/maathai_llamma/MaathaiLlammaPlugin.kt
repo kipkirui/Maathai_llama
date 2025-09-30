@@ -1,4 +1,4 @@
-package com.example.maathai_llamma
+package com.usemaathai.maathai_llamma
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall

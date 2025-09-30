@@ -4,14 +4,14 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'maathai_llamma'
-  s.version          = '0.0.1'
-  s.summary          = 'A new Flutter plugin project.'
+  s.version          = '0.1.0'
+  s.summary          = 'Flutter bindings for llama.cpp offline inference.'
   s.description      = <<-DESC
-A new Flutter plugin project.
+Bindings that wrap llama.cpp to run GGUF models entirely offline from Flutter apps.
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/usemaathai/maathai_llamma'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'Maathai' => 'support@usemaathai.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'

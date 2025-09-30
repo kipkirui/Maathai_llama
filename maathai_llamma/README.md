@@ -2,6 +2,29 @@
 
 This plugin packages [`llama.cpp`](https://github.com/ggml-org/llama.cpp) so Flutter apps can load GGUF models and chat fully offline. The initial release focuses on Android (NDK-based build), with room to extend to other targets.
 
+## Getting Started
+
+Install the package:
+
+```bash
+flutter pub add maathai_llamma
+```
+
+Then initialize the plugin before loading a model:
+
+```dart
+final llama = MaathaiLlamma();
+final ok = await llama.initialize();
+if (!ok) {
+  throw Exception('Failed to initialize llama backend');
+}
+await llama.loadModel(modelPath: '/sdcard/Download/mistral.q4_k.gguf');
+final output = await llama.generate(prompt: 'Hello!');
+print(output);
+```
+
+To stream tokens, call `generateStream` instead of `generate` to receive incremental chunks.
+
 ## Directory Layout
 
 - `lib/`: Dart API exposing initialize → loadModel → generate → release lifecycle.
@@ -9,11 +32,17 @@ This plugin packages [`llama.cpp`](https://github.com/ggml-org/llama.cpp) so Flu
 - `extern/llama.cpp`: Git submodule tracking upstream inference runtime.
 - `example/`: Flutter UI that lets you pick a local model path and exchange prompts.
 
-## Prerequisites (Android)
+## Platform Support
+
+### Android (stable)
 
 1. **Android Studio / SDK** with NDK `26.1.10909125` and CMake `3.22.1`.
 2. **Flutter 3.3+** with compatible Dart SDK.
 3. GGUF model stored locally on the device/emulator.
+
+### iOS
+
+iOS support is currently a stub implementation that responds with an `unimplemented` error. Native bindings will ship in a future update.
 
 ## Build Steps
 

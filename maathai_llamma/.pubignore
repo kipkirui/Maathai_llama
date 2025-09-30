@@ -1,0 +1,5 @@
+# Exclude development tooling and large upstream artifacts from the published package.
+extern/llama.cpp/build-xcframework.sh
+extern/llama.cpp/docs/
+extern/llama.cpp/examples/llama.swiftui/
+
