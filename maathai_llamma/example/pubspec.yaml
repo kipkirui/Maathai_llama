@@ -1,0 +1,32 @@
+name: maathai_llamma_example
+description: "Demonstrates how to use the maathai_llamma plugin."
+publish_to: 'none'
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  maathai_llamma:
+    path: ../
+
+  cupertino_icons: ^1.0.8
+  file_selector: ^1.0.3
+  path: ^1.9.0
+  path_provider: ^2.1.4
+  google_fonts: ^6.2.1
+  intl: ^0.19.0
+  provider: ^6.1.2
+  file_picker: ^8.1.4
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
