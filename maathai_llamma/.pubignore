@@ -1,5 +1,20 @@
 # Exclude development tooling and large upstream artifacts from the published package.
 extern/llama.cpp/build-xcframework.sh
 extern/llama.cpp/docs/
-extern/llama.cpp/examples/llama.swiftui/
+extern/llama.cpp/examples/
+extern/llama.cpp/gguf-py/
+extern/llama.cpp/grammars/
+extern/llama.cpp/media/
+extern/llama.cpp/models/
+extern/llama.cpp/scripts/
+extern/llama.cpp/tests/
+extern/llama.cpp/tools/
+extern/llama.cpp/vendor/
+
+# Exclude local build outputs and generated assets that should not ship.
+build/
+example/build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
 
