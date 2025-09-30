@@ -1,0 +1,79 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+.idea/
+.vscode/
+
+# Git
+.orig
+*.backup
+*.bak
+
+# Node/WebUI (if used in extern tools)
+node_modules/
+dist/
+build/
+
+# Flutter / Dart
+.dart_tool/
+.packages
+pubspec.lock
+build/
+coverage/
+
+# Android
+**/local.properties
+**/.cxx/
+**/captures/
+**/gradle/
+**/gradlew
+**/gradlew.bat
+**/gradle-wrapper.jar
+**/app/build/
+**/build/
+**/intermediates/
+**/generated/
+**/jniLibs/**/*.so
+
+# iOS
+**/Pods/
+**/DerivedData/
+**/*.xcuserdatad/
+**/*.xcworkspace/
+**/*.xcuserdata/
+**/*.xcuserstate
+**/Runner.xcworkspace/
+**/Runner.xcodeproj/project.xcworkspace/
+
+# Binaries / Libraries
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.exe
+*.apk
+*.ipa
+
+# Archives
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+
+# Models and large assets
+*.gguf
+*.bin
+*.onnx
+**/models/**
+
+# Python (extern tools)
+__pycache__/
+*.pyc
+.venv/
+
+

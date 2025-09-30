@@ -1,1 +1,49 @@
-TODO: Add your license here.
+Maathai Community License v1.0 (Based on Apache License 2.0)
+
+Copyright (c) 2025 Maathai. All rights reserved.
+
+1. Definitions
+   "License" means this Maathai Community License v1.0.
+   "Licensor" means the copyright owner(s) granting this License.
+   "You" (or "Your") means an individual or Legal Entity exercising permissions granted by this License.
+   "Non-Commercial Use" means any use that is not intended for or directed toward commercial advantage or monetary compensation, or where the aggregate annual revenue attributable to the Covered Work is less than $1,000,000 USD.
+   "Commercial Use" means any use intended for or directed toward commercial advantage or monetary compensation where the aggregate annual revenue attributable to the Covered Work is equal to or exceeds $1,000,000 USD.
+   "Covered Work" means the original work of authorship made available by the Licensor in this repository, except for components identified as third-party works in THIRD_PARTY_NOTICES.
+
+2. License Grants (Non-Commercial)
+   Subject to the terms and conditions of this License, the Licensor hereby grants You a perpetual, worldwide, royalty-free, non-exclusive, non-sublicensable license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense (only for Non-Commercial Use), and distribute the Covered Work for Non-Commercial Use, under the same terms as Section 2 of the Apache License, Version 2.0, including its patent license, with the following modifications:
+   - Attribution: You must provide appropriate attribution to "Maathai" and retain all copyright, patent, trademark, and attribution notices.
+   - Notices: You must include a copy of this License and the notices referenced in THIRD_PARTY_NOTICES with any distribution of the Covered Work.
+
+3. Commercial Use Threshold and Licensing
+   If Your use of the Covered Work constitutes Commercial Use (i.e., Your annual revenue attributable to the Covered Work equals or exceeds $1,000,000 USD), You must obtain a separate commercial license from the Licensor prior to or within 30 days of crossing the threshold. To inquire about commercial licensing, visit https://usemaathai.com or contact support@usemaathai.com.
+
+4. No Restriction on Third-Party Components
+   This License applies only to the Covered Work. Third-party components included in, referenced by, or distributed alongside the Covered Work remain governed by their own licenses as identified in THIRD_PARTY_NOTICES (for example, `extern/llama.cpp` under the MIT license). This License does not impose any additional restrictions on such third-party components.
+
+5. Trademarks
+   This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Covered Work and reproducing the content of the attribution notices.
+
+6. Disclaimer of Warranty
+   Unless required by applicable law or agreed to in writing, Licensor provides the Covered Work (and each Contributor provides its contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Covered Work and assume any risks associated with Your exercise of permissions under this License.
+
+7. Limitation of Liability
+   In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Covered Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.
+
+8. Accepting Warranty or Additional Liability
+   While redistributing the Covered Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of Your accepting any such warranty or additional liability.
+
+9. Relationship to Apache License 2.0
+   Except as expressly modified above to add the Non-Commercial Use limitation and Commercial Use threshold, the terms and conditions of the Apache License, Version 2.0 (January 2004) are incorporated by reference. In the event of a conflict between this License and the Apache License 2.0 terms, this License controls for the Covered Work.
+
+   The full text of the Apache License, Version 2.0 is available at: https://www.apache.org/licenses/LICENSE-2.0
+
+10. Termination
+   Any breach of this License terminates the rights granted herein. Upon termination, You must cease use and distribution of the Covered Work, except for any third-party components governed by their own licenses.
+
+11. Severability
+   If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable, and the remaining provisions shall remain in full force and effect.
+
+12. Contact
+   For commercial licensing, please contact: support@usemaathai.com or visit https://usemaathai.com.
+

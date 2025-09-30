@@ -59,3 +59,9 @@ Contributions welcome! Open an issue or PR to discuss enhancements.
 
 
 
+
+## Licensing
+
+- Core code in this repository is provided under the Maathai Community License v1.0, which is based on Apache-2.0 but limited to Non-Commercial Use below a $1,000,000 USD annual revenue threshold.
+- For Commercial Use at or above the threshold, please obtain a commercial license from Maathai. Contact: support@usemaathai.com or visit https://usemaathai.com.
+- Third-party components (e.g., `extern/llama.cpp`) are licensed under their respective terms and are not affected by the non-commercial clause. See `THIRD_PARTY_NOTICES.md`.
