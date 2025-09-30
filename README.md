@@ -22,3 +22,13 @@ flutter run --device-id <device>
 - llama.cpp upstream docs: https://github.com/ggml-org/llama.cpp
 - Flutter plugin authoring: https://flutter.dev/to/develop-plugins
 
+---
+
+## Open Source
+
+- License: MIT (see `LICENSE`)
+- Security: see `SECURITY.md`
+- Contributing: see `CONTRIBUTING.md` and the issue/PR templates in `.github/`
+- Code of Conduct: see `CODE_OF_CONDUCT.md`
+- Changelog: see `CHANGELOG.md`
+
