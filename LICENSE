@@ -1,21 +1,37 @@
-MIT License
+Maathai Llamma Community and Commercial License
+
+Summary (non-legal):
+- Free for nonprofits.
+- Free for individuals and organizations with trailing 12‑month gross revenue ≤ $1,000,000 USD under the PolyForm Small Business License 1.0.0.
+- A paid commercial license is required for companies and organizations exceeding $1,000,000 USD in trailing 12‑month gross revenue, or for any use not permitted by the license below.
+- Third‑party components remain under their original licenses.
+
+Full terms:
+
+1) Nonprofit Exception
+
+Nonprofit organizations may use, copy, modify, and deploy the Software for any purpose at no charge, including internal use and offering the Software’s functionality to their users, provided they do not offer the Software as a paid commercial service to third parties. “Nonprofit” means an organization operated exclusively for charitable, educational, scientific, or similar purposes without distributing profits to owners or shareholders.
+
+2) PolyForm Small Business License 1.0.0
+
+If you are an individual or your organization’s trailing 12‑month gross revenue is at or below $1,000,000 USD, and you are not controlled by, controlling, or under common control with an organization that exceeds that threshold, you may use this Software under the PolyForm Small Business License 1.0.0.
+
+License text: https://polyformproject.org/licenses/small-business/1.0.0/
+
+3) Commercial License (Required Above Threshold)
+
+If your organization’s trailing 12‑month gross revenue exceeds $1,000,000 USD, or if your intended use is not permitted by the Nonprofit Exception or the PolyForm Small Business License 1.0.0, you must obtain a commercial license from the authors to use, copy, modify, or deploy the Software. Please contact: licensing@maathai.dev.
+
+4) No Trademark License
+
+This license does not grant permission to use the project’s names, logos, or trademarks.
+
+5) Third‑Party Components
+
+This project includes or depends on third‑party software (including `llama.cpp`) that is provided under its own licenses. Those licenses are included in `maathai_llamma/extern/llama.cpp/licenses/` or their respective upstream repositories and continue to govern those components.
+
+6) Disclaimer of Warranty; Limitation of Liability
+
+THE SOFTWARE IS PROVIDED “AS IS” AND WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. IN NO EVENT WILL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Copyright (c) 2025 Maathai Llamma Contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
