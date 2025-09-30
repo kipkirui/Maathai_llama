@@ -128,7 +128,7 @@ class ModelController extends ChangeNotifier {
     }
   }
 
-  Future<String> generate(String prompt, {int maxTokens = 128}) async {
+  Future<String> generate(String prompt, {int maxTokens = 512}) async {
     try {
       Logger.info('Generate request', data: {
         'prompt': prompt,
@@ -144,7 +144,7 @@ class ModelController extends ChangeNotifier {
     }
   }
 
-  Stream<String> generateStream(String prompt, {int maxTokens = 128}) {
+  Stream<String> generateStream(String prompt, {int maxTokens = 512}) {
     Logger.info('GenerateStream request', data: {
       'prompt': prompt,
       'maxTokens': maxTokens,

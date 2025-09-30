@@ -101,7 +101,7 @@ class _ChatScreenState extends State<ChatScreen> {
       }
       // Stream tokens
       String buffer = '';
-      await for (final chunk in controller.generateStream(message, maxTokens: 128)) {
+      await for (final chunk in controller.generateStream(message, maxTokens: 512)) {
         String incoming = chunk;
         if (_captureThinking) {
           // capture <think> ... </think> and do not show in chat when enabled

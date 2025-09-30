@@ -56,7 +56,7 @@ class MaathaiLlamma {
 
   Future<String> generate({
     required String prompt,
-    int maxTokens = 128,
+    int maxTokens = 512,
     String? cancelToken,
   }) {
     return MaathaiLlammaPlatform.instance.generate(
@@ -68,7 +68,7 @@ class MaathaiLlamma {
 
   Stream<String> generateStream({
     required String prompt,
-    int maxTokens = 128,
+    int maxTokens = 512,
     String? cancelToken,
   }) {
     return MaathaiLlammaPlatform.instance.generateStream(

@@ -81,7 +81,7 @@ class MaathaiLlammaPlugin : FlutterPlugin, MethodCallHandler, EventChannel.Strea
             "startGenerateStream" -> {
                 Log.i(TAG, "startGenerateStream called")
                 val prompt = call.argument<String>("prompt")
-                val maxTokens = call.argument<Int>("maxTokens") ?: 128
+                val maxTokens = call.argument<Int>("maxTokens") ?: 512
                 if (prompt.isNullOrEmpty()) {
                     result.error("invalid_prompt", "prompt must not be empty", null)
                     return
@@ -162,7 +162,7 @@ class MaathaiLlammaPlugin : FlutterPlugin, MethodCallHandler, EventChannel.Strea
             "generate" -> {
                 Log.i(TAG, "generate called")
                 val prompt = call.argument<String>("prompt")
-                val maxTokens = call.argument<Int>("maxTokens") ?: 128
+                val maxTokens = call.argument<Int>("maxTokens") ?: 512
 
                 if (prompt.isNullOrEmpty()) {
                     result.error("invalid_prompt", "prompt must not be empty", null)

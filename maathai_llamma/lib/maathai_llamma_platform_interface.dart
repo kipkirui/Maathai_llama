@@ -56,7 +56,7 @@ abstract class MaathaiLlammaPlatform extends PlatformInterface {
 
   Future<String> generate({
     required String prompt,
-    int maxTokens = 128,
+    int maxTokens = 512,
     String? cancelToken,
   }) {
     throw UnimplementedError('generate() has not been implemented.');
@@ -64,7 +64,7 @@ abstract class MaathaiLlammaPlatform extends PlatformInterface {
 
   Stream<String> generateStream({
     required String prompt,
-    int maxTokens = 128,
+    int maxTokens = 512,
     String? cancelToken,
   }) {
     throw UnimplementedError('generateStream() has not been implemented.');

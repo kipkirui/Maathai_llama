@@ -89,7 +89,7 @@ class MethodChannelMaathaiLlamma extends MaathaiLlammaPlatform {
   @override
   Future<String> generate({
     required String prompt,
-    int maxTokens = 128,
+    int maxTokens = 512,
     String? cancelToken,
   }) async {
     if (kDebugMode) {
@@ -111,7 +111,7 @@ class MethodChannelMaathaiLlamma extends MaathaiLlammaPlatform {
   @override
   Stream<String> generateStream({
     required String prompt,
-    int maxTokens = 128,
+    int maxTokens = 512,
     String? cancelToken,
   }) {
     final controller = StreamController<String>();

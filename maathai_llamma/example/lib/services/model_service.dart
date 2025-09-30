@@ -9,7 +9,6 @@ class ModelInfo {
   final String path;
   final int sizeBytes;
   final DateTime lastModified;
-  final bool isInitialized;
   final int contextWindow;
   final Map<String, dynamic> metadata;
 
@@ -18,7 +17,6 @@ class ModelInfo {
     required this.path,
     required this.sizeBytes,
     required this.lastModified,
-    this.isInitialized = false,
     this.contextWindow = 4096,
     this.metadata = const {},
   });

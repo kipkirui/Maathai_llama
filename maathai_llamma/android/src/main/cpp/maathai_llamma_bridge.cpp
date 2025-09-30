@@ -44,6 +44,23 @@ std::unique_ptr<LlamaSession> g_session;
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG, LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
+constexpr int kUnboundedSafetyCap = 1024;
+
+int resolve_target_tokens(int requested, int prompt_tokens) {
+    if (requested > 0) {
+        return requested;
+    }
+    if (!g_session || g_session->ctx == nullptr) {
+        return kUnboundedSafetyCap;
+    }
+    const int ctx_slots = llama_n_ctx(g_session->ctx);
+    int available = ctx_slots - prompt_tokens;
+    if (available <= 0) {
+        return 1;
+    }
+    return std::min(kUnboundedSafetyCap, available);
+}
+
 inline void ensure_backend() {
     static std::once_flag init_flag;
     std::call_once(init_flag, []() {
@@ -324,7 +341,8 @@ Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_generate(
     llama_token new_token = 0;
     int generated = 0;
 
-    while (generated < n_predict) {
+    const int target_tokens = resolve_target_tokens(n_predict, n_prompt);
+    while (generated < target_tokens) {
         new_token = llama_sampler_sample(g_session->sampler, g_session->ctx, -1);
         if (llama_vocab_is_eog(vocab, new_token)) {
             break;
@@ -479,7 +497,8 @@ Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_startGenerate(
             int generated = 0;
             slock.unlock(); // allow nextTokenPiece to run while generating
 
-            while (generated < n_predict) {
+            const int target_tokens = resolve_target_tokens(n_predict, n_prompt);
+            while (generated < target_tokens) {
                 {
                     std::lock_guard<std::mutex> lk(g_session->mutex);
                     if (g_session->cancel) {

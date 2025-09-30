@@ -37,7 +37,7 @@ The build will compile `llama.cpp` for each Android ABI via CMake and bundle the
 
 1. `MaathaiLlamma.initialize()` — calls `llama_backend_init` once per process.
 2. `loadModel(modelPath, contextLength, threads, gpuLayers)` — loads a GGUF model, configures context size & thread count, and prepares a sampler chain (temperature + top-k/top-p).
-3. `generate(prompt, maxTokens)` — sends the prompt to the native side, runs a decoding loop, and returns sampled tokens as a string.
+3. `generate(prompt, {maxTokens})` — sends the prompt to the native side, runs a decoding loop, and returns sampled tokens as a string. The Dart API now defaults `maxTokens` to 512, but passing `0` (or any value ≤0) lets the model continue until EOS or until an internal safety cap (1024 tokens or the remaining context, whichever is smaller).
 4. `release()` — frees model, context, and sampler.
 
 See `example/lib/main.dart` for an end-to-end chat UI.

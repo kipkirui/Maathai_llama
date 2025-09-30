@@ -4,12 +4,14 @@ import '../theme/app_theme.dart';
 
 class ModelInfoCard extends StatelessWidget {
   final ModelInfo model;
+  final bool backendReady;
   final VoidCallback? onDelete;
   final Widget? trailing;
 
   const ModelInfoCard({
     super.key,
     required this.model,
+    required this.backendReady,
     this.onDelete,
     this.trailing,
   });
@@ -55,9 +57,9 @@ class ModelInfoCard extends StatelessWidget {
             _buildInfoRow(
               context,
               'Status',
-              model.isInitialized ? 'Initialized' : 'Not Initialized',
-              model.isInitialized ? Icons.check_circle_outline : Icons.pending_outlined,
-              model.isInitialized ? AppTheme.primaryColor : Colors.orange,
+              backendReady ? 'Initialized' : 'Not Initialized',
+              backendReady ? Icons.check_circle_outline : Icons.pending_outlined,
+              backendReady ? AppTheme.primaryColor : Colors.orange,
             ),
             const SizedBox(height: AppTheme.spacing_sm),
             _buildInfoRow(
