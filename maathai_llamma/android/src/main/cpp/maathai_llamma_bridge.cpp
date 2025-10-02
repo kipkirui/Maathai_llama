@@ -102,7 +102,7 @@ void free_session() {
 }  // namespace
 
 extern "C" JNIEXPORT jboolean JNICALL
-Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_initBackend(
+Java_com_usemaathai_maathai_1llamma_MaathaiLlammaPlugin_initBackend(
     JNIEnv * env,
     jobject /* thiz */) {
     (void) env;
@@ -112,7 +112,7 @@ Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_initBackend(
 }
 
 extern "C" JNIEXPORT jboolean JNICALL
-Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_loadModel(
+Java_com_usemaathai_maathai_1llamma_MaathaiLlammaPlugin_loadModel(
     JNIEnv * env,
     jobject /* thiz */,
     jstring model_path,
@@ -261,7 +261,7 @@ Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_loadModel(
 }
 
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_generate(
+Java_com_usemaathai_maathai_1llamma_MaathaiLlammaPlugin_generate(
     JNIEnv * env,
     jobject /* thiz */,
     jstring prompt,
@@ -368,7 +368,7 @@ Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_generate(
 }
 
 extern "C" JNIEXPORT jboolean JNICALL
-Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_updateSampler(
+Java_com_usemaathai_maathai_1llamma_MaathaiLlammaPlugin_updateSampler(
     JNIEnv * env,
     jobject /* thiz */,
     jfloat temperature,
@@ -416,7 +416,7 @@ static std::condition_variable g_stream_cv;
 static std::atomic_bool g_stream_active{false};
 
 extern "C" JNIEXPORT jboolean JNICALL
-Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_startGenerate(
+Java_com_usemaathai_maathai_1llamma_MaathaiLlammaPlugin_startGenerate(
     JNIEnv * env,
     jobject /* thiz */,
     jstring prompt,
@@ -540,7 +540,7 @@ Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_startGenerate(
 }
 
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_nextTokenPiece(
+Java_com_usemaathai_maathai_1llamma_MaathaiLlammaPlugin_nextTokenPiece(
     JNIEnv * env,
     jobject /* thiz */) {
     (void) env;
@@ -553,7 +553,7 @@ Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_nextTokenPiece(
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_cancelGenerate(
+Java_com_usemaathai_maathai_1llamma_MaathaiLlammaPlugin_cancelGenerate(
     JNIEnv * env,
     jobject /* thiz */) {
     (void) env;
@@ -565,7 +565,7 @@ Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_cancelGenerate(
 }
 
 extern "C" JNIEXPORT jboolean JNICALL
-Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_isStreamActive(
+Java_com_usemaathai_maathai_1llamma_MaathaiLlammaPlugin_isStreamActive(
     JNIEnv * env,
     jobject /* thiz */) {
     (void) env;
@@ -573,7 +573,7 @@ Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_isStreamActive(
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_example_maathai_1llamma_MaathaiLlammaPlugin_release(
+Java_com_usemaathai_maathai_1llamma_MaathaiLlammaPlugin_release(
     JNIEnv * env,
     jobject /* thiz */) {
     (void) env;
